@@ -56,12 +56,11 @@ To run this project locally:
 * [ ] Add blog or articles section
 * [ ] Add theme toggle (light/dark mode)
 * [ ] Improve accessibility and SEO
-'''
 
 ## 📬 Contact
 
-* **LinkedIn**: [linkedin.com/in/danybinuluke](https://linkedin.com/in/danybinuluke)
-* **Email**: \[danybinu2005@gmail.com]
+* **LinkedIn** (https://linkedin.com/in/danybinuluke)
+* **Email** \danybinu2005@gmail.com
 
 ---
 
