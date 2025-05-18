@@ -19,7 +19,7 @@ https://danybinuluke.vercel.app
 - 🎯 Smooth animations using Framer Motion
 - 💼 Project showcase with GitHub and live demo links
 - 📄 Downloadable resume
-- 📬 Contact form integration *(optional section if applicable)*
+- 📬 Contact form integration
 - 🧑‍💼 About me section with skills, education, and experience
 
 ## 🧰 Getting Started
