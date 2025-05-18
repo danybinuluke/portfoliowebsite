@@ -1,4 +1,4 @@
-🌐 Personal Portfolio Website
+## 🌐 Personal Portfolio Website
 
 A modern, responsive personal portfolio website built using **Next.js**, **Tailwind CSS**, and **Framer Motion**. This site showcases my projects, technical skills, achievements, and serves as a digital resume to connect with potential employers and collaborators.
 
@@ -22,10 +22,6 @@ https://danybinuluke.vercel.app
 - 📬 Contact form integration *(optional section if applicable)*
 - 🧑‍💼 About me section with skills, education, and experience
 
-## 📷 Screenshots
-
-*(Insert screenshots of your homepage, projects section, etc.)*
-
 ## 🧰 Getting Started
 
 To run this project locally:
@@ -33,7 +29,7 @@ To run this project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/danybinuluke/portfoliowebsite.git
-````
+
 
 2. Navigate to the project directory:
 
@@ -60,6 +56,7 @@ To run this project locally:
 * [ ] Add blog or articles section
 * [ ] Add theme toggle (light/dark mode)
 * [ ] Improve accessibility and SEO
+'''
 
 ## 📬 Contact
 
