@@ -59,8 +59,8 @@ To run this project locally:
 
 ## 📬 Contact
 
-* **LinkedIn** (https://linkedin.com/in/danybinuluke)
-* **Email** \danybinu2005@gmail.com
+* [LinkedIn](https://linkedin.com/in/danybinuluke)
+* [Email](danybinu2005@gmail.com)
 
 ---
 
