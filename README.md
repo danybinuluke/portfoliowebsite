@@ -51,12 +51,6 @@ To run this project locally:
 
 5. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 📌 To-Do
-
-* [ ] Add blog or articles section
-* [ ] Add theme toggle (light/dark mode)
-* [ ] Improve accessibility and SEO
-
 ## 📬 Contact
 
 * [LinkedIn](https://linkedin.com/in/danybinuluke)
