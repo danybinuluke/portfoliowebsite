@@ -3,6 +3,7 @@ import { title } from "process";
 import ProjectOne from '@/images/ProjectOne.png';
 import ProjectTwo from '@/images/ProjectTwo.png';
 import ProjectThree from '@/images/ProjectThree.png';
+import ProjectFour from '@/images/ProjectFour.png';
 
 export const NavbarData = [
     { title: "Home", href: "/"},
@@ -130,7 +131,8 @@ export const projects = [{
   stack:['Python','ResNL','XGBoost','RandomForest','Pandas','NumPy','Matplotlib'],
   image: ProjectOne,
   liveUrl: 'https://sentistockai.streamlit.app/',
-  githubUrl: 'https://github.com/mehul-77/stockanalyzer2'
+  githubUrl: 'https://github.com/mehul-77/stockanalyzer2',
+  status: "completed"
 },
 {
   id:'02',
@@ -139,7 +141,8 @@ export const projects = [{
   description: 'A speech-to-text summarizer that transcribes regional language audio files and generates concise summaries in English or the given regional language using NLP techniques.',
   stack:['Python','PyTorch','HuggingFace Transformers','Gradio'],
   image: ProjectTwo,
-  githubUrl: 'https://github.com/danybinuluke/Vaani---A-Speech_to_Text_Summarizer'
+  githubUrl: 'https://github.com/danybinuluke/Vaani---A-Speech_to_Text_Summarizer',
+  status: "completed"
 },
 {
   id:'03',
@@ -148,6 +151,18 @@ export const projects = [{
   description: 'This project is a simple flight price comparison website designed to help users search for and compare flight ticket prices from various airlines, focusing on a responsive and user-friendly front-end design.',
   stack:['HTML','CSS','JavaScript'],
   image: ProjectThree,
-  githubUrl: 'https://github.com/danybinuluke/Trip.com'
+  githubUrl: 'https://github.com/danybinuluke/Trip.com',
+  status: 'completed'
+},
+{
+  id:'04',
+  title:'MobiPhysio - A Physiotherapy Clinic in Coimbatore',
+  category: 'Web Development',
+  description: "This is an ongoing project where I was assigned to create an overhaul and refreshing touch to the clinic's current website and add an appointment booking system to their clinic.",
+  stack:['React','NextJs','Framer','ThreeJs'],
+  image: ProjectFour,
+  liveUrl: 'https://mobiphysio.vercel.app',
+  githubUrl: 'https://github.com/danybinuluke/cbphysio',
+  status: 'ongoing'
 }
 ]

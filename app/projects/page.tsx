@@ -1,34 +1,81 @@
-'use client'
+'use client';
 
-import Container from '@/components/Container'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
+import Container from '@/components/Container';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel'
-import { Separator } from '@/components/ui/separator'
+} from '@/components/ui/carousel';
+import { Separator } from '@/components/ui/separator';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip'
-import { projects } from '@/constants'
-import { ArrowUpRight, Github } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+} from '@/components/ui/tooltip';
+import { projects } from '@/constants';
+import { ArrowUpRight, Github } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState, useMemo } from 'react';
 
 const ProjectPage = () => {
+  // State to manage which tab is active: 'completed' or 'ongoing'
+  const [activeTab, setActiveTab] = useState('completed');
+
+  // Filter projects based on status. `useMemo` prevents re-filtering on every render.
+  const filteredProjects = useMemo(
+    () => projects?.filter((project) => project.status === activeTab),
+    [activeTab] // This will only re-run when activeTab changes
+  );
+
   return (
-    <Container className="py-5 md:py-10 mb-14 md:mb-0">
-      <Carousel opts={{ align: 'start', loop: true }} className="w-full">
+    <Container className="py-5 md:py-10 mb-28 md:mb-10">
+      {/* Tab Navigation Buttons */}
+      <div className="flex justify-center gap-4 mb-8">
+        <Button
+          onClick={() => setActiveTab('completed')}
+          variant={activeTab === 'completed' ? 'default' : 'outline'}
+          className={`
+            px-6 py-2 rounded-md transition-all duration-300
+            ${
+              activeTab === 'completed'
+                ? 'bg-hoverColor text-white border-hoverColor'
+                : 'bg-transparent text-white/70 border-lightSky/20 hover:bg-lightSky/10 hover:text-white'
+            }
+          `}
+        >
+          Completed
+        </Button>
+        <Button
+          onClick={() => setActiveTab('ongoing')}
+          variant={activeTab === 'ongoing' ? 'default' : 'outline'}
+          className={`
+            px-6 py-2 rounded-md transition-all duration-300
+            ${
+              activeTab === 'ongoing'
+                ? 'bg-hoverColor text-white border-hoverColor'
+                : 'bg-transparent text-white/70 border-lightSky/20 hover:bg-lightSky/10 hover:text-white'
+            }
+          `}
+        >
+          Ongoing
+        </Button>
+      </div>
+
+      {/* Conditionally Rendered Carousel */}
+      <Carousel
+        // Add a key to force re-mount the carousel on tab change, resetting its position
+        key={activeTab}
+        opts={{ align: 'start', loop: true }}
+        className="w-full"
+      >
         <CarouselContent className="overflow-visible">
-          {projects?.map((project, index) => (
+          {filteredProjects?.map((project) => (
             <CarouselItem key={project?.id} className="overflow-visible">
               <Card className="bg-bodyColor border-lightSky/20 text-white group overflow-visible">
                 <CardContent className="p-6 overflow-visible">
@@ -129,7 +176,7 @@ const ProjectPage = () => {
         </div>
       </Carousel>
     </Container>
-  )
-}
+  );
+};
 
-export default ProjectPage
+export default ProjectPage;
