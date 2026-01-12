@@ -6,11 +6,13 @@ import Statistics from "@/components/Statistics";
 import HomeDescription from "@/components/HomeDescription";
 import { Download } from "lucide-react";
 
+export const runtime = "nodejs";
+
 
 
 // Fetch data from an API on the server side
 async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts",{cache: 'no-store'});
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
