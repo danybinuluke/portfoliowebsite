@@ -4,6 +4,7 @@ import ProjectOne from '@/images/ProjectOne.png';
 import ProjectTwo from '@/images/ProjectTwo.png';
 import ProjectThree from '@/images/ProjectThree.png';
 import ProjectFour from '@/images/ProjectFour.png';
+import ProjectFive from '@/images/ProjectFive.png'
 
 export const NavbarData = [
     { title: "Home", href: "/"},
@@ -164,5 +165,17 @@ export const projects = [{
   liveUrl: 'https://mobiphysio.vercel.app',
   githubUrl: 'https://github.com/danybinuluke/cbphysio',
   status: 'ongoing'
+},
+{
+  id:'05',
+  title:'MicroState - Real-Time Market Microstructure Analytics System',
+  category: 'Web Development',
+  description: "Developed full-stack dashboard with React and FastAPI featuring WebSocket streaming, Google OAuth authentication, and real-time visualization of predictions and market metrics.",
+  stack:['Python', 'FastAPI', 'React', 'Vite', 'Supabase', 'Docker'],
+  image: ProjectFive,
+  liveUrl: 'https://microstate.vercel.app',
+  githubUrl: 'https://github.com/KickShade/MicroState',
+  status: 'completed'
 }
 ]
+
