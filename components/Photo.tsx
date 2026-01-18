@@ -1,16 +1,17 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import hero from "@/images/hero.png"; // Ensure the path is correct
 
 const Photo = () => {
     const circleColors = ["#00ff99"];
-    const circleVariants = {
+    
+    const circleVariants: Variants = {
         initial: {
             strokeDasharray: "24 10 0 0",
-            rotate: "0",
-            opacity: "0",
+            rotate: 0,
+            opacity: 0,
         },
         animate: (index: number) => ({
             strokeDasharray: ['15 120 25 25', '16 25 92 72', '4 250 22 22'], 
@@ -20,12 +21,12 @@ const Photo = () => {
                 strokeDasharray: {
                     duration: 20,
                     repeat: Infinity,
-                    repeatType: "reverse",
+                    repeatType: "reverse" as const,
                 },
                 rotate: {
                     duration: 20,
                     repeat: Infinity,
-                    repeatType: "reverse",
+                    repeatType: "reverse" as const,
                 },
                 opacity: {
                     duration: 0.4,
@@ -52,7 +53,7 @@ const Photo = () => {
                         opacity: 1,
                         transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
                     }}
-                    className="relative w-[500px] h-[500px] lg:w-[550px] lg:h-[550px] flex items-center justify-center -mt-5 ml-10" // Added ml-10 to shift right
+                    className="relative w-[500px] h-[500px] lg:w-[550px] lg:h-[550px] flex items-center justify-center -mt-5 ml-10"
                 >
                     {/* Circular Border */}
                     <svg
