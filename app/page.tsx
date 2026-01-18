@@ -6,6 +6,8 @@ import Statistics from "@/components/Statistics";
 import HomeDescription from "@/components/HomeDescription";
 import { Download } from "lucide-react";
 
+export const runtime = "nodejs";
+
 
 
 
