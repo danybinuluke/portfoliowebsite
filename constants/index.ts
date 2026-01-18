@@ -105,7 +105,7 @@ export const tabContent = {
         year: "2009 - 2023",
         description: "Completed my schooling with a focus on science and mathematics.",
         link: "https://www.uiskwt.com/",
-        logo: "https://play-lh.googleusercontent.com/oa5Q-tHYBrTc6XGZHhY59nEcd7t8Nv8TlTGxB_LbNN2BsL7xtFq9HyJCapFnfUCb_Q" // Replace with a valid school logo URL if needed
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiwV3XkSMpqGvo_gW75I1GueXUl4431UlK7g&s" // Replace with a valid school logo URL if needed
       }
     ]
   },

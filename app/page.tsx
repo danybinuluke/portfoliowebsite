@@ -8,9 +8,10 @@ import { Download } from "lucide-react";
 
 
 
+
 // Fetch data from an API on the server side
 async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts",{cache: 'no-store'});
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
