@@ -125,57 +125,57 @@ export const tabContent = {
 }
 
 export const projects = [{
-  id: '01',
+  id:'01',
+  title:'MicroState - Real-Time Market Microstructure Analytics System',
+  category: 'Web Development',
+  description: "Developed full-stack dashboard with React and FastAPI featuring WebSocket streaming, Google OAuth authentication, and real-time visualization of predictions and market metrics.",
+  stack:['Python', 'FastAPI', 'React', 'Vite', 'Supabase', 'Docker'],
+  image: ProjectOne,
+  liveUrl: 'https://microstate.vercel.app',
+  githubUrl: 'https://github.com/KickShade/MicroState',
+  status: 'completed'
+},
+{
+  id: '02',
   title:'SentiStock AI',
   category: 'Machine Learning',
   description: 'A stock market prediction tool mainly for US Market that uses sentiment analysis on news articles to forecast stock prices.',
   stack:['Python','ResNL','XGBoost','RandomForest','Pandas','NumPy','Matplotlib'],
-  image: ProjectOne,
+  image: ProjectTwo,
   liveUrl: 'https://sentistockai.streamlit.app/',
   githubUrl: 'https://github.com/mehul-77/stockanalyzer2',
   status: "completed"
 },
 {
-  id:'02',
+  id:'03',
   title:'Vaani - A Speech-To-Text Summarizer',
   category: 'Machine Learning',
   description: 'A speech-to-text summarizer that transcribes regional language audio files and generates concise summaries in English or the given regional language using NLP techniques.',
   stack:['Python','PyTorch','HuggingFace Transformers','Gradio'],
-  image: ProjectTwo,
+  image: ProjectThree,
   githubUrl: 'https://github.com/danybinuluke/Vaani---A-Speech_to_Text_Summarizer',
   status: "completed"
 },
 {
-  id:'03',
+  id:'04',
   title:'Trip.com',
   category: 'Web Development',
   description: 'This project is a simple flight price comparison website designed to help users search for and compare flight ticket prices from various airlines, focusing on a responsive and user-friendly front-end design.',
   stack:['HTML','CSS','JavaScript'],
-  image: ProjectThree,
+  image: ProjectFour,
   githubUrl: 'https://github.com/danybinuluke/Trip.com',
   status: 'completed'
 },
 {
-  id:'04',
+  id:'05',
   title:'MobiPhysio - A Physiotherapy Clinic in Coimbatore',
   category: 'Web Development',
   description: "This is an ongoing project where I was assigned to create an overhaul and refreshing touch to the clinic's current website and add an appointment booking system to their clinic.",
   stack:['React','NextJs','Framer','ThreeJs'],
-  image: ProjectFour,
+  image: ProjectFive,
   liveUrl: 'https://mobiphysio.vercel.app',
   githubUrl: 'https://github.com/danybinuluke/cbphysio',
   status: 'ongoing'
 },
-{
-  id:'05',
-  title:'MicroState - Real-Time Market Microstructure Analytics System',
-  category: 'Web Development',
-  description: "Developed full-stack dashboard with React and FastAPI featuring WebSocket streaming, Google OAuth authentication, and real-time visualization of predictions and market metrics.",
-  stack:['Python', 'FastAPI', 'React', 'Vite', 'Supabase', 'Docker'],
-  image: ProjectFive,
-  liveUrl: 'https://microstate.vercel.app',
-  githubUrl: 'https://github.com/KickShade/MicroState',
-  status: 'completed'
-}
 ]
 
