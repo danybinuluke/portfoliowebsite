@@ -1,23 +1,33 @@
 import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
-import { siLeetcode, siCodeforces } from 'simple-icons';
+import { siLeetcode, siCodeforces, SimpleIcon } from 'simple-icons';
 import Link from 'next/link';
 import React from 'react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 
-// Fixed Helper: Correctly accesses the 'path' property from simple-icons
-const SiIcon = ({ icon }) => (
+// Define the shape of our icon helper props to satisfy TypeScript
+interface SiIconProps {
+  icon: SimpleIcon;
+}
+
+const SiIcon = ({ icon }: SiIconProps) => (
   <svg
     role="img"
     viewBox="0 0 24 24"
     className="w-5 h-5 fill-current"
     xmlns="http://www.w3.org/2000/svg"
   >
-    {/* Simple Icons provides the path as a raw string */}
     <path d={icon.path} />
   </svg>
 );
 
-const socialData = [
+// Define the shape of our social data objects
+interface SocialItem {
+  title: string;
+  icon: React.ReactNode;
+  link: string;
+}
+
+const socialData: SocialItem[] = [
   {
     title: "Instagram",
     icon: <Instagram className='w-5 h-5' />,
@@ -54,18 +64,18 @@ const SocialLinks = () => {
   return (
     <TooltipProvider>
       <div className='flex items-center gap-3'>
-        {socialData?.map((item) => (
-          <Tooltip key={item?.title}>
+        {socialData.map((item) => (
+          <Tooltip key={item.title}>
             <TooltipTrigger asChild>
               <Link 
-                href={item?.link} 
+                href={item.link} 
                 className="text-lightSky/80 border border-lightSky/30 p-2.5 rounded-full hover:bg-lightSky/10 hover:text-lightSky hoverEffect flex items-center justify-center transition-all duration-300"
               >
-                {item?.icon}
+                {item.icon}
               </Link>
             </TooltipTrigger>
             <TooltipContent className='text-xs uppercase font-medium rounded-[6px]'>
-              {item?.title}
+              {item.title}
             </TooltipContent>
           </Tooltip>
         ))}
