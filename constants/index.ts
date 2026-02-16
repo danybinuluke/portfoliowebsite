@@ -4,7 +4,8 @@ import ProjectOne from '@/images/ProjectOne.png';
 import ProjectTwo from '@/images/ProjectTwo.png';
 import ProjectThree from '@/images/ProjectThree.png';
 import ProjectFour from '@/images/ProjectFour.png';
-import ProjectFive from '@/images/ProjectFive.png'
+import ProjectFive from '@/images/ProjectFive.png';
+import ProjectSix from '@/images/ProjectSix.png';
 
 export const NavbarData = [
     { title: "Home", href: "/"},
@@ -168,11 +169,21 @@ export const projects = [{
 },
 {
   id:'05',
+  title:'EmoVue - An AI Based Movie Recommender System',
+  category: ['Web Development','AI'],
+  description: "This is an ongoing project where I am creating an AI Based Movie Recommender System based on various inputs such as Mood, Day, Trending Movie etc",
+  stack:['React','NextJs','SupaBase','GSAP'],
+  image: ProjectFive,
+  githubUrl: 'https://github.com/danybinuluke/emovue',
+  status: 'ongoing'
+},
+{
+  id:'06',
   title:'MobiPhysio - A Physiotherapy Clinic in Coimbatore',
   category: 'Web Development',
   description: "This is an ongoing project where I was assigned to create an overhaul and refreshing touch to the clinic's current website and add an appointment booking system to their clinic.",
   stack:['React','NextJs','Framer','ThreeJs'],
-  image: ProjectFive,
+  image: ProjectSix,
   liveUrl: 'https://mobiphysio.vercel.app',
   githubUrl: 'https://github.com/danybinuluke/cbphysio',
   status: 'ongoing'
