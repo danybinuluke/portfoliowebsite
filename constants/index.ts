@@ -144,8 +144,8 @@ export const projects = [{
   description: 'AI-powered fact-checking and contradiction detection platform using RAG, vector search, and knowledge graphs to analyze relationships between claims across documents.',
   stack:['FastAPI','Gemini API','OpenRouter','Ollama','Pinecone','Neo4j','Python'],
   image: ProjectTwo,
-  liveUrl: 'https://sentistockai.streamlit.app/',
-  githubUrl: 'https://github.com/mehul-77/stockanalyzer2',
+  liveUrl: 'https://fact-checker-dbl.vercel.app',
+  githubUrl: 'https://github.com/danybinuluke/fact-checker-rag',
   status: "completed"
 },
 {
