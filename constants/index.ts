@@ -6,6 +6,7 @@ import ProjectThree from '@/images/ProjectThree.png';
 import ProjectFour from '@/images/ProjectFour.png';
 import ProjectFive from '@/images/ProjectFive.png';
 import ProjectSix from '@/images/ProjectSix.png';
+import ProjectSeven from '@/images/ProjectSeven.png';
 
 export const NavbarData = [
     { title: "Home", href: "/"},
@@ -138,52 +139,63 @@ export const projects = [{
 },
 {
   id: '02',
-  title:'SentiStock AI',
-  category: 'Machine Learning',
-  description: 'A stock market prediction tool mainly for US Market that uses sentiment analysis on news articles to forecast stock prices.',
-  stack:['Python','ResNL','XGBoost','RandomForest','Pandas','NumPy','Matplotlib'],
+  title:'Fact Checker - RAG Based AI System',
+  category: 'Retrieval Augmented Generation',
+  description: 'AI-powered fact-checking and contradiction detection platform using RAG, vector search, and knowledge graphs to analyze relationships between claims across documents.',
+  stack:['FastAPI','Gemini API','OpenRouter','Ollama','Pinecone','Neo4j','Python'],
   image: ProjectTwo,
   liveUrl: 'https://sentistockai.streamlit.app/',
   githubUrl: 'https://github.com/mehul-77/stockanalyzer2',
   status: "completed"
 },
 {
-  id:'03',
-  title:'Vaani - A Speech-To-Text Summarizer',
+  id: '03',
+  title:'SentiStock AI',
   category: 'Machine Learning',
-  description: 'A speech-to-text summarizer that transcribes regional language audio files and generates concise summaries in English or the given regional language using NLP techniques.',
-  stack:['Python','PyTorch','HuggingFace Transformers','Gradio'],
+  description: 'A stock market prediction tool mainly for US Market that uses sentiment analysis on news articles to forecast stock prices.',
+  stack:['Python','ResNL','XGBoost','RandomForest','Pandas','NumPy','Matplotlib'],
   image: ProjectThree,
-  githubUrl: 'https://github.com/danybinuluke/Vaani---A-Speech_to_Text_Summarizer',
+  liveUrl: 'https://sentistockai.streamlit.app/',
+  githubUrl: 'https://github.com/mehul-77/stockanalyzer2',
   status: "completed"
 },
 {
   id:'04',
+  title:'Vaani - A Speech-To-Text Summarizer',
+  category: 'Machine Learning',
+  description: 'A speech-to-text summarizer that transcribes regional language audio files and generates concise summaries in English or the given regional language using NLP techniques.',
+  stack:['Python','PyTorch','HuggingFace Transformers','Gradio'],
+  image: ProjectFour,
+  githubUrl: 'https://github.com/danybinuluke/Vaani---A-Speech_to_Text_Summarizer',
+  status: "completed"
+},
+{
+  id:'05',
   title:'Trip.com',
   category: 'Web Development',
   description: 'This project is a simple flight price comparison website designed to help users search for and compare flight ticket prices from various airlines, focusing on a responsive and user-friendly front-end design.',
   stack:['HTML','CSS','JavaScript'],
-  image: ProjectFour,
+  image: ProjectFive,
   githubUrl: 'https://github.com/danybinuluke/Trip.com',
   status: 'completed'
 },
 {
-  id:'05',
+  id:'06',
   title:'EmoVue - An AI Based Movie Recommender System',
   category: ['Web Development','AI'],
   description: "This is an ongoing project where I am creating an AI Based Movie Recommender System based on various inputs such as Mood, Day, Trending Movie etc",
   stack:['React','NextJs','SupaBase','GSAP'],
-  image: ProjectFive,
+  image: ProjectSix,
   githubUrl: 'https://github.com/danybinuluke/emovue',
   status: 'ongoing'
 },
 {
-  id:'06',
+  id:'07',
   title:'MobiPhysio - A Physiotherapy Clinic in Coimbatore',
   category: 'Web Development',
   description: "This is an ongoing project where I was assigned to create an overhaul and refreshing touch to the clinic's current website and add an appointment booking system to their clinic.",
   stack:['React','NextJs','Framer','ThreeJs'],
-  image: ProjectSix,
+  image: ProjectSeven,
   liveUrl: 'https://mobiphysio.vercel.app',
   githubUrl: 'https://github.com/danybinuluke/cbphysio',
   status: 'ongoing'
